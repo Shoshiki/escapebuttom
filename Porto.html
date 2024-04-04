@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewpage" content="width=device-width, initial-scale=75">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagex/png" href="">
+    <title>Nene</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="" target="_blank">Love you</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li> <a href="" target="_blank">Tá carente?</a></li>
+                <li> <a href="" target="_blank">?</a></li>
+                <li> <a href="" target="_blank">?</a></li>
+                <li> <a href="" target="_blank">?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="everthing">
+        <div class="first">
+            <h2>Você aceita casar comigo?</h2>
+        </div>
+        <div>
+            <button class="btn" onclick="sim()">SIM</button>
+            <button class="btn" onclick="desvia(this)" onmouseover="desvia(this)" style="position: absolute;">NÃO</button>
+        </div>
+    </div>
+
+    <script>
+    function sim() {
+        alert("Você aceitou namorar comigo! :)");
+        // redireciona para um URL após clicar no SIM
+        location.href = "https://music.youtube.com/watch?v=izGwDsrQ1eQ";
+    }
+
+    function desvia(btn) {
+        // btn declarado na função
+        btn.style.position = 'absolute';
+        btn.style.bottom = geraPosicao(10, 90);
+        btn.style.left = geraPosicao(10, 90);
+        console.log('opa, desviei...');
+    }
+
+    function geraPosicao(min, max) {
+        return (Math.random() * (max - min) + min) + "%";
+    }
+
+    </script>
+
+<Script src="mobile-navbar.js"></Script>
+
+
+</body>
+</html>
+
